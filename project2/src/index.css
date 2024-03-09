@@ -1,0 +1,63 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/012/765/037/original/abstract-luxury-red-and-gold-background-design-modern-illustration-template-layout-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #ffef97;
+  border: 3px solid #dfa800;
+  border-radius: 12px; 
+  padding: 30px; 
+  margin-bottom: 30px; 
+  font-size: 18px; 
+  width: 600px; 
+  height: 200px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+
+.card:hover,
+.card:focus {
+  border-color: #ffd700; 
+  box-shadow: 0 0 20px 5px rgba(255, 215, 0, 0.7); 
+}
+
+
+
+.next-button {
+  background-color: #ffffff; 
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.next-button:hover,
+.next-button:focus {
+  box-shadow: 0 0 20px 5px #ffde79; 
+}
+
+
+
