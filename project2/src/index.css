@@ -39,7 +39,9 @@ body {
 
 
 
-.next-button {
+/* App.css */
+.next-button,
+.back-button {
   background-color: #ffffff; 
   border: none;
   color: rgb(0, 0, 0);
@@ -55,8 +57,70 @@ body {
 }
 
 .next-button:hover,
-.next-button:focus {
+.back-button:hover,
+.next-button:focus,
+.back-button:focus {
   box-shadow: 0 0 20px 5px #ffde79; 
+}
+
+
+
+
+.guess-container {
+  display: flex;
+  align-items: center;
+}
+
+.guess-container label {
+  margin-right: 10px;
+}
+
+.guess-container input[type="text"],
+.guess-container button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.guess-container button {
+  cursor: pointer;
+  background-color: white;
+}
+
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.guess-container {
+  margin-top: 20px;
+}
+
+.guess-container label {
+  margin-right: 10px;
+  font-size: 20px; /* Larger font size */
+  font-weight: bold; /* Make it bold */
+  color: white; /* Set text color to white */
+}
+
+.guess-container input[type="text"],
+.guess-container button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  color: black; /* Set text color to black */
+}
+
+.guess-container input[type="text"] {
+  background-color: transparent;
+  width: 200px;
+}
+
+.guess-container button {
+  cursor: pointer;
+  background-color: transparent;
 }
 
 

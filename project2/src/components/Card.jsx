@@ -1,15 +1,18 @@
+// Card.jsx
 import React, { useState } from 'react';
 
 const Card = ({ question, answer }) => {
   const [showAnswer, setShowAnswer] = useState(false);
 
-  const handleClick = () => {
+  const handleShowAnswer = () => {
     setShowAnswer(!showAnswer);
   };
 
   return (
-    <div className="card" onClick={handleClick}>
-      {showAnswer ? <p>{answer}</p> : <p>{question}</p>}
+    <div>
+      <div className="card" onClick={handleShowAnswer}>
+        {showAnswer ? <p>{answer}</p> : <p>{question}</p>}
+      </div>
     </div>
   );
 };
